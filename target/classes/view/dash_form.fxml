@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="285.0" prefWidth="323.0" style="-fx-background-color: #3498db;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashFormController">
+   <children>
+      <Label layoutX="76.0" layoutY="38.0" text="Thogakade POS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <JFXButton layoutX="102.0" layoutY="133.0" onAction="#btnAddOnAction" prefWidth="121.0" style="-fx-background-color: white;" text="Add Customer" />
+      <JFXButton layoutX="102.0" layoutY="186.0" onAction="#btnViewOnAction" prefWidth="121.0" style="-fx-background-color: white;" text="View Customer" />
+   </children>
+</AnchorPane>

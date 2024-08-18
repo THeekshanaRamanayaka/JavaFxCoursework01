@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="625.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCustomerFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="91.0" stroke="BLACK" strokeType="INSIDE" width="922.0" />
+      <Label layoutX="311.0" layoutY="12.0" text="View Customer" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <TableView fx:id="resulttable" layoutX="40.0" layoutY="125.0" onMouseClicked="#mouseclicked" prefHeight="200.0" prefWidth="844.0">
+         <columns>
+            <TableColumn fx:id="collid" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="colltitle" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="collname" prefWidth="172.59109497070312" text="Name" />
+            <TableColumn fx:id="colladdress" prefWidth="183.58099365234375" text="Address" />
+            <TableColumn fx:id="colldob" prefWidth="180.1214599609375" text="Birthday" />
+            <TableColumn fx:id="collcontact" prefWidth="155.5" text="Contact" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="search" layoutX="295.0" layoutY="344.0" prefHeight="25.0" prefWidth="174.0" />
+      <JFXButton layoutX="503.0" layoutY="344.0" onAction="#btnSearchOnAction" style="-fx-background-color: #f39c12;" text="Search" textFill="WHITE" />
+      <Label layoutX="68.0" layoutY="411.0" prefHeight="17.0" prefWidth="34.0" text="ID" />
+      <JFXTextField fx:id="id" layoutX="134.0" layoutY="406.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="355.0" layoutY="411.0" prefHeight="17.0" prefWidth="34.0" text="Name" />
+      <JFXTextField fx:id="name" layoutX="415.0" layoutY="406.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="69.0" layoutY="460.0" prefHeight="17.0" prefWidth="34.0" text="Phone" />
+      <JFXTextField fx:id="phone" layoutX="133.0" layoutY="456.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="620.0" layoutY="410.0" prefHeight="17.0" prefWidth="34.0" text="Title" />
+      <Label layoutX="355.0" layoutY="460.0" prefHeight="17.0" prefWidth="51.0" text="Address" />
+      <JFXTextField fx:id="address" layoutX="418.0" layoutY="456.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="620.0" layoutY="460.0" prefHeight="17.0" prefWidth="51.0" text="Birthday" />
+      <DatePicker fx:id="bday" layoutX="682.0" layoutY="455.0" />
+      <JFXComboBox fx:id="title" layoutX="683.0" layoutY="406.0" prefHeight="25.0" prefWidth="174.0" />
+      <JFXButton layoutX="300.0" layoutY="540.0" onAction="#btnDeleteOnAction" style="-fx-background-color: #c0392b;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="562.0" layoutY="540.0" onAction="#btnUpdateOnAction" style="-fx-background-color: #4cd137;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
