@@ -40,14 +40,7 @@ public class AddCustomerFormController implements Initializable {
 
         if(!(txtName.getText().trim().isEmpty() && txtAddress.getText().trim().isEmpty() && txtPhoneNumber.getText().trim().isEmpty() && cmbTitle.getValue().trim().isEmpty() && bday.getValue() == null)) {
             customerList.add(
-                    new Customer(
-                            txtId.getText(),
-                            cmbTitle.getValue(),
-                            txtName.getText(),
-                            txtAddress.getText(),
-                            txtPhoneNumber.getText(),
-                            bday.getValue()
-                    )
+                    new Customer(txtId.getText(), cmbTitle.getValue(), txtName.getText(), txtAddress.getText(), txtPhoneNumber.getText(), bday.getValue())
             );
             txtId.setText("00"+generate());
             cmbTitle.setValue(null);

@@ -53,5 +53,6 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </JFXButton>
+      <JFXButton layoutX="828.0" layoutY="344.0" onAction="#btnReloadOnAction" style="-fx-background-color: #0097e6;" text="Reload" textFill="WHITE" />
    </children>
 </AnchorPane>
