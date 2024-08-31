@@ -17,7 +17,7 @@ import java.util.ResourceBundle;
 public class AddCustomerFormController implements Initializable {
 
     @FXML
-    private DatePicker bday;
+    private DatePicker day;
 
     @FXML
     private JFXComboBox<String> cmbTitle;
@@ -38,16 +38,16 @@ public class AddCustomerFormController implements Initializable {
     void btnAddOnAction(ActionEvent event) {
         List<Customer> customerList = DBConnection.getInstance().getDBConnection();
 
-        if(!(txtName.getText().trim().isEmpty() && txtAddress.getText().trim().isEmpty() && txtPhoneNumber.getText().trim().isEmpty() && cmbTitle.getValue().trim().isEmpty() && bday.getValue() == null)) {
+        if(!(txtName.getText().trim().isEmpty() && txtAddress.getText().trim().isEmpty() && txtPhoneNumber.getText().trim().isEmpty() && cmbTitle.getValue().trim().isEmpty() && day.getValue() == null)) {
             customerList.add(
-                    new Customer(txtId.getText(), cmbTitle.getValue(), txtName.getText(), txtAddress.getText(), txtPhoneNumber.getText(), bday.getValue())
+                    new Customer(txtId.getText(), cmbTitle.getValue(), txtName.getText(), txtAddress.getText(), txtPhoneNumber.getText(), day.getValue())
             );
             txtId.setText("00"+generate());
             cmbTitle.setValue(null);
             txtName.setText(null);
             txtAddress.setText(null);
             txtPhoneNumber.setText(null);
-            bday.setValue(null);
+            day.setValue(null);
         }
     }
 
@@ -57,15 +57,13 @@ public class AddCustomerFormController implements Initializable {
         txtId.setText("00"+generate());
     }
 
+    private static int index = 1;
     public int generate(){
         List<Customer> templist = DBConnection.getInstance().getDBConnection();
-        int index;
         if(templist.isEmpty()){
-            index = 0;
+            return index;
+        }else{
+            return ++index;
         }
-        else {
-            index = Integer.parseInt(templist.get(templist.size()-1).getId());
-        }
-        return ++index;
     }
 }

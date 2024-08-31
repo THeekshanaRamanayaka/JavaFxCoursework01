@@ -21,28 +21,28 @@
       </Label>
       <TableView fx:id="resulttable" layoutX="40.0" layoutY="125.0" onMouseClicked="#mouseclicked" prefHeight="200.0" prefWidth="844.0">
          <columns>
-            <TableColumn fx:id="collid" prefWidth="75.0" text="ID" />
-            <TableColumn fx:id="colltitle" prefWidth="75.0" text="Title" />
-            <TableColumn fx:id="collname" prefWidth="172.59109497070312" text="Name" />
-            <TableColumn fx:id="colladdress" prefWidth="183.58099365234375" text="Address" />
-            <TableColumn fx:id="colldob" prefWidth="180.1214599609375" text="Birthday" />
-            <TableColumn fx:id="collcontact" prefWidth="155.5" text="Contact" />
+            <TableColumn fx:id="colid" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="coltitle" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="colname" prefWidth="172.59109497070312" text="Name" />
+            <TableColumn fx:id="coladdress" prefWidth="183.58099365234375" text="Address" />
+            <TableColumn fx:id="coldob" prefWidth="180.1214599609375" text="Birthday" />
+            <TableColumn fx:id="colcontact" prefWidth="155.5" text="Contact" />
          </columns>
       </TableView>
-      <JFXTextField fx:id="search" layoutX="295.0" layoutY="344.0" prefHeight="25.0" prefWidth="174.0" />
+      <JFXTextField fx:id="txtsearch" layoutX="295.0" layoutY="344.0" prefHeight="25.0" prefWidth="174.0" />
       <JFXButton layoutX="503.0" layoutY="344.0" onAction="#btnSearchOnAction" style="-fx-background-color: #f39c12;" text="Search" textFill="WHITE" />
       <Label layoutX="68.0" layoutY="411.0" prefHeight="17.0" prefWidth="34.0" text="ID" />
-      <JFXTextField fx:id="id" layoutX="134.0" layoutY="406.0" prefHeight="25.0" prefWidth="174.0" />
+      <JFXTextField fx:id="txtid" layoutX="134.0" layoutY="406.0" prefHeight="25.0" prefWidth="174.0" />
       <Label layoutX="355.0" layoutY="411.0" prefHeight="17.0" prefWidth="34.0" text="Name" />
-      <JFXTextField fx:id="name" layoutX="415.0" layoutY="406.0" prefHeight="25.0" prefWidth="174.0" />
+      <JFXTextField fx:id="txtname" layoutX="415.0" layoutY="406.0" prefHeight="25.0" prefWidth="174.0" />
       <Label layoutX="69.0" layoutY="460.0" prefHeight="17.0" prefWidth="34.0" text="Phone" />
-      <JFXTextField fx:id="phone" layoutX="133.0" layoutY="456.0" prefHeight="25.0" prefWidth="174.0" />
+      <JFXTextField fx:id="txtphone" layoutX="133.0" layoutY="456.0" prefHeight="25.0" prefWidth="174.0" />
       <Label layoutX="620.0" layoutY="410.0" prefHeight="17.0" prefWidth="34.0" text="Title" />
       <Label layoutX="355.0" layoutY="460.0" prefHeight="17.0" prefWidth="51.0" text="Address" />
-      <JFXTextField fx:id="address" layoutX="418.0" layoutY="456.0" prefHeight="25.0" prefWidth="174.0" />
+      <JFXTextField fx:id="txtaddress" layoutX="418.0" layoutY="456.0" prefHeight="25.0" prefWidth="174.0" />
       <Label layoutX="620.0" layoutY="460.0" prefHeight="17.0" prefWidth="51.0" text="Birthday" />
-      <DatePicker fx:id="bday" layoutX="682.0" layoutY="455.0" />
-      <JFXComboBox fx:id="title" layoutX="683.0" layoutY="406.0" prefHeight="25.0" prefWidth="174.0" />
+      <DatePicker fx:id="day" layoutX="682.0" layoutY="455.0" />
+      <JFXComboBox fx:id="cmbtitle" layoutX="683.0" layoutY="406.0" prefHeight="25.0" prefWidth="174.0" />
       <JFXButton layoutX="300.0" layoutY="540.0" onAction="#btnDeleteOnAction" style="-fx-background-color: #c0392b;" text="Delete" textFill="WHITE">
          <font>
             <Font name="System Bold" size="18.0" />

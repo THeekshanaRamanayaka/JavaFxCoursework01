@@ -15,7 +15,4 @@ public class Customer {
     private String address;
     private String phone;
     private LocalDate day;
-
-    public Customer(String text, String value, String text1, String text2, String text3, LocalDate value1) {
-    }
 }

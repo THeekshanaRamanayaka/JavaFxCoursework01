@@ -52,7 +52,7 @@
       <JFXTextField fx:id="txtAddress" layoutX="243.0" layoutY="237.0" prefHeight="26.0" prefWidth="282.0" />
       <JFXTextField fx:id="txtPhoneNumber" layoutX="243.0" layoutY="276.0" prefHeight="26.0" prefWidth="282.0" />
       <JFXComboBox fx:id="cmbTitle" layoutX="243.0" layoutY="164.0" prefHeight="26.0" prefWidth="282.0" />
-      <DatePicker fx:id="bday" layoutX="243.0" layoutY="322.0" prefHeight="26.0" prefWidth="282.0" />
+      <DatePicker fx:id="day" layoutX="243.0" layoutY="322.0" prefHeight="26.0" prefWidth="282.0" />
       <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="269.0" layoutY="389.0" onAction="#btnAddOnAction" prefHeight="26.0" prefWidth="63.0" style="-fx-background-color: #27ae60;" text="Add" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
          <font>
             <Font name="System Bold" size="13.0" />
